@@ -1,5 +1,5 @@
 $(function () {
-    getUserInfo()
+    getUserInfo() 
     var layer = layui.layer
     $('#btnLogout').on('click', function () {
         // 提示用户是否确认退出 
