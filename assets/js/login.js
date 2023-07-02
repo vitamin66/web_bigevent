@@ -74,6 +74,8 @@ $(function () {
                     return layer.msg(res.meesage)
                 }
                 layer.msg('登录成功')
+                // 把用户名也存到本地存储中 登录成功跳转之后还需要使用
+                localStorage.setItem('username', $('#from_login [name=username]').val())
                 // 把token 存到本地存储中
                 localStorage.setItem('token', res.token)
                 // 跳转到后台主页
