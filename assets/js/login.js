@@ -62,7 +62,7 @@ $(function () {
         e.preventDefault()
         $.ajax({
             method: 'post',
-            url: 'http://127.0.0.1/my/login',
+            url: 'http://127.0.0.1/my/login', 
             data: {
                 username: $('#from_login [name=username]').val(),
                 password: $('#from_login [name=password]').val()
